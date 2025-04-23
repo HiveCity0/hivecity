@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elazığ Etkinlik Platformu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-calendar-alt"></i>
+                Elazığ Etkinlik
+            </div>
+            <ul class="nav-links">
+                <li><a href="#anasayfa">Ana Sayfa</a></li>
+                <li><a href="#etkinlikler">Etkinlikler</a></li>
+                <li><a href="#kulupler">Kulüpler</a></li>
+                <li><a href="#takvim">Takvim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="anasayfa" class="hero">
+            <h1>Elazığ'da Keşfedilecek Etkinlikler</h1>
+            <p>Şehrinizdeki tüm etkinlikleri keşfedin ve katılın!</p>
+        </section>
+
+        <section id="arama">
+            <div class="arama-formu">
+                <input type="text" id="etkinlikArama" placeholder="Etkinlik ara...">
+                <select id="etkinlikTuru">
+                    <option value="">Tüm Türler</option>
+                    <option value="konser">Konser</option>
+                    <option value="seminer">Seminer</option>
+                    <option value="spor">Spor</option>
+                    <option value="kultur">Kültür</option>
+                </select>
+                <input type="date" id="etkinlikTarihi">
+                <button onclick="etkinlikleriFiltrele()">Ara</button>
+            </div>
+        </section>
+
+        <section id="etkinlikler">
+            <h2>Yaklaşan Etkinlikler</h2>
+            <div class="etkinlik-listesi">
+                <!-- Etkinlikler JavaScript ile dinamik olarak eklenecek -->
+            </div>
+        </section>
+
+        <section id="kulupler">
+            <h2>Kulüpler</h2>
+            <div class="kulup-listesi">
+                <!-- Kulüpler JavaScript ile dinamik olarak eklenecek -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Elazığ Etkinlik Platformu. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
