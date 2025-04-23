@@ -3,66 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elazığ Etkinlik Platformu</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Şehir Etkinlikleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <header>
+        <div class="logo">HiveCity</div>
         <nav>
-            <div class="logo">
-                <i class="fas fa-calendar-alt"></i>
-                Elazığ Etkinlik
-            </div>
-            <ul class="nav-links">
-                <li><a href="#anasayfa">Ana Sayfa</a></li>
-                <li><a href="#etkinlikler">Etkinlikler</a></li>
-                <li><a href="#kulupler">Kulüpler</a></li>
-                <li><a href="#takvim">Takvim</a></li>
+            <ul>
+                <li><a href="#" class="active">Ana Sayfa</a></li>
+                <li><a href="#">Etkinlikler</a></li>
+                <li><a href="#">Kulüpler</a></li>
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">İletişim</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="anasayfa" class="hero">
-            <h1>Elazığ'da Keşfedilecek Etkinlikler</h1>
-            <p>Şehrinizdeki tüm etkinlikleri keşfedin ve katılın!</p>
-        </section>
+    <section class="slider-container">
+        <div class="slider">
+            <!-- Slider içeriği JavaScript ile doldurulacak -->
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots">
+            <!-- Dots JavaScript ile doldurulacak -->
+        </div>
+    </section>
 
-        <section id="arama">
-            <div class="arama-formu">
-                <input type="text" id="etkinlikArama" placeholder="Etkinlik ara...">
-                <select id="etkinlikTuru">
-                    <option value="">Tüm Türler</option>
-                    <option value="konser">Konser</option>
-                    <option value="seminer">Seminer</option>
-                    <option value="spor">Spor</option>
-                    <option value="kultur">Kültür</option>
-                </select>
-                <input type="date" id="etkinlikTarihi">
-                <button onclick="etkinlikleriFiltrele()">Ara</button>
-            </div>
-        </section>
+    <section class="upcoming-events">
+        <h2 class="section-title animate__animated animate__fadeIn">Yaklaşan Etkinlikler</h2>
+        <div class="events-container">
+            <!-- Etkinlikler JavaScript ile doldurulacak -->
+        </div>
+    </section>
 
-        <section id="etkinlikler">
-            <h2>Yaklaşan Etkinlikler</h2>
-            <div class="etkinlik-listesi">
-                <!-- Etkinlikler JavaScript ile dinamik olarak eklenecek -->
-            </div>
-        </section>
+    <section class="clubs">
+        <h2 class="section-title animate__animated animate__fadeIn">Kulüplerimiz</h2>
+        <div class="clubs-container">
+            <!-- Kulüpler JavaScript ile doldurulacak -->
+        </div>
+    </section>
 
-        <section id="kulupler">
-            <h2>Kulüpler</h2>
-            <div class="kulup-listesi">
-                <!-- Kulüpler JavaScript ile dinamik olarak eklenecek -->
-            </div>
-        </section>
-    </main>
+    <!-- Harita Bölümü -->
+    <section class="map-section">
+        <h2 class="section-title animate__animated animate__fadeIn">Konum</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.5504045157317!2d39.19384637678271!3d38.68156197242968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDQwJzUzLjYiTiAzOcKwMTEnNDUuOCJF!5e0!3m2!1str!2str!4v1650729845320!5m2!1str!2str" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Detay Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content animate__animated animate__zoomIn">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Elazığ Etkinlik Platformu. Tüm hakları saklıdır.</p>
+        <div class="footer-content">
+            <div class="footer-logo">HiveCity</div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2023 HiveCity. Tüm hakları saklıdır.</p>
+        </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 

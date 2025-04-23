@@ -1,0 +1,602 @@
+/* Genel Stiller */
+:root {
+    --primary-color: #e60000;
+    --secondary-color: #ffffff;
+    --accent-color-1: #00aa00;
+    --accent-color-2: #222222;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+/* Header Stili */
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all var(--transition-speed);
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Slider Stili */
+.slider-container {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.slide-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.slide-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideUp 0.8s forwards;
+}
+
+.slide-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideUp 0.8s 0.3s forwards;
+}
+
+.slide-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideUp 0.8s 0.6s forwards;
+    transition: all var(--transition-speed);
+}
+
+.slide-btn:hover {
+    background-color: #cc0000;
+    transform: translateY(-5px);
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.prev-btn, .next-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--secondary-color);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: all var(--transition-speed);
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 3;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.dot.active {
+    background-color: var(--secondary-color);
+    transform: scale(1.2);
+}
+
+/* Bölüm Başlıkları */
+.section-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 4rem 0 2rem;
+    position: relative;
+    font-size: 2.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: var(--primary-color);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Yaklaşan Etkinlikler Stili */
+.upcoming-events {
+    padding: 2rem 5%;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed);
+    position: relative;
+    top: 0;
+    opacity: 0;
+    animation: fadeInUp 0.6s forwards;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-details {
+    padding: 1.5rem;
+}
+
+.event-title {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.event-date, .event-location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color-2);
+}
+
+.event-date i, .event-location i {
+    margin-right: 0.5rem;
+    color: var(--accent-color-1);
+}
+
+.event-description {
+    margin: 1rem 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.event-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.register-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.register-btn:hover {
+    background-color: #cc0000;
+}
+
+.share-btn {
+    background-color: var(--accent-color-1);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.share-btn:hover {
+    background-color: #008800;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+/* Kulüpler Stili */
+.clubs {
+    padding: 2rem 5%;
+    background-color: #f8f8f8;
+}
+
+.clubs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.club-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed);
+    transform: scale(0.95);
+    opacity: 0;
+    animation: scaleIn 0.6s forwards;
+}
+
+.club-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.club-logo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.club-details {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.club-name {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.club-description {
+    margin: 1rem 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.club-link {
+    display: inline-block;
+    background-color: var(--accent-color-2);
+    color: var(--secondary-color);
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: all var(--transition-speed);
+}
+
+.club-link:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+@keyframes scaleIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Harita Bölümü Stili */
+.map-section {
+    padding: 2rem 5%;
+    background-color: var(--secondary-color);
+}
+
+.map-container {
+    margin-top: 3rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Modal Stili */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: var(--secondary-color);
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    width: 80%;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color-2);
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.close-modal:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+}
+
+#modalTitle {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+#modalTitle::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#modalContent {
+    color: var(--accent-color-2);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Footer Stili */
+footer {
+    background-color: var(--accent-color-2);
+    color: var(--secondary-color);
+    padding: 3rem 5%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.social-links a {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    transition: all var(--transition-speed);
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+/* Responsive Stiller */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem;
+    }
+    
+    .slider-container {
+        height: 50vh;
+    }
+    
+    .slide-title {
+        font-size: 2rem;
+    }
+    
+    .events-container, .clubs-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .modal-content {
+        width: 90%;
+        margin: 10% auto;
+        padding: 1.5rem;
+    }
+    
+    #modalTitle {
+        font-size: 1.7rem;
+    }
+    
+    #modalContent {
+        font-size: 1rem;
+    }
+
+    .map-container iframe {
+        height: 350px;
+    }
+} 
