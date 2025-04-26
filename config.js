@@ -125,8 +125,6 @@ const clubsConfig = [
         link: "#",
         mainContent: "Spor Kulübü, 2003 yılında kurulmuş olup, öğrencilerin sportif faaliyetlerini desteklemek ve sağlıklı yaşam bilincini yaygınlaştırmak amacıyla çalışmaktadır.<br><br>Kulübümüz bünyesinde futbol, voleybol, basketbol, tenis, masa tenisi, yüzme, atletizm ve satranç gibi birçok branşta takımlar bulunmaktadır. Bu takımlar hem üniversite içi hem de üniversiteler arası turnuvalarda okulumuzu başarıyla temsil etmektedir.<br><br>Her dönem düzenlediğimiz 'Spor Şenliği' etkinliğimizde farklı fakülteler arası turnuvalar organize etmekte ve kampüs genelinde spor ruhunu canlandırmaktayız.<br><br>Ayrıca profesyonel sporcular ve antrenörler eşliğinde düzenlediğimiz workshoplar ile üyelerimizin teknik ve taktik gelişimlerine katkı sağlamaktayız. Düzenli olarak gerçekleştirdiğimiz sabah koşuları ve outdoor etkinliklerimiz ile aktif yaşamı destekliyoruz.<br><br>Spora ilgi duyan ve herhangi bir branşta kendini geliştirmek isteyen tüm öğrencileri kulübümüze bekliyoruz."
     },
-    {
-        id:5,
-        name: "sadasdas"
-    }
-]; 
+    
+
+    ]; 
