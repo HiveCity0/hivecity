@@ -32,6 +32,7 @@ const sliderConfig = [
 ];
 ```
 
+
 ### Etkinlik Yapılandırması
 
 Etkinlikleri `config.js` dosyasındaki `eventsConfig` dizisini düzenleyerek değiştirebilirsiniz:
