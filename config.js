@@ -1,8 +1,4 @@
-/**
- * Slider Yapılandırması
- * Aşağıdaki bilgileri değiştirerek slider içeriğini güncelleyebilirsiniz
- */
-const sliderConfig = [
+
     {
         id: 1,
         title: "Bahar Festivali",
