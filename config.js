@@ -138,3 +138,33 @@ const clubsConfig = [
     
 
     ]; 
+// config.js içinde socialEventsConfig örneği:
+const socialEventsConfig = [
+    {
+        id: 1,
+        title: "Kampüs Pikniği",
+        date: "2024-09-20",
+        location: "Üniversite Çim Alan",
+        description: "Dönem başlangıcını kutlamak için harika bir piknik! Müzik, oyunlar ve lezzetli yiyecekler.", // Kartta görünecek
+        mainDescription: "Yeni döneme merhaba demek ve arkadaşlarımızla keyifli vakit geçirmek için düzenlediğimiz geleneksel kampüs pikniğimize davetlisiniz. Getireceğiniz yiyecek ve içeceklerle ortak bir sofra kuracağız. Unutmayın, en güzel anılar paylaştıkça çoğalır!", // Modal için ana açıklama
+        imageUrl: "https://picsum.photos/seed/picnic/400/250",
+        registrationDeadline: "2024-09-18", // Opsiyonel, eğer registerForEvent kullanacaksa
+        form: "https://github.com/HiveCity0/hivecity/settings/pages", // Opsiyonel
+        categories: [" Eğlence", "Sosyal", "Açık Hava"], // YENİ ALAN
+        requirements: ["Herkes davetlidir.", "Yanınızda atıştırmalık getirebilirsiniz."] // YENİ ALAN
+    },
+    {
+        id: 2,
+        title: "Kitap Okuma Günü",
+        date: "2024-10-12",
+        location: "Kütüphane Bahçesi",
+        description: "En sevdiğiniz kitapları kapıp gelin, sessizliğin ve edebiyatın tadını çıkaralım.",
+        mainDescription: "Kitap kurtları buluşuyor! Kütüphane bahçesinin huzurlu atmosferinde, seçtiğimiz bir tema etrafında kitaplarımızı okuyacak ve ardından kısa bir sohbet gerçekleştireceğiz. Kahvenizi ve kitabınızı alıp gelmeyi unutmayın.",
+        imageUrl: "https://picsum.photos/seed/bookday/400/250",
+        registrationDeadline: "2024-10-10",
+        form: "#",
+        categories: ["Kültür", "Edebiyat", "Sakin Etkinlik"], // YENİ ALAN
+        requirements: ["Kendi kitabınızı getirin.", "Sessizliğe özen gösterilmesi rica olunur."] // YENİ ALAN
+    },
+    // ... diğer sosyal etkinlikler
+];

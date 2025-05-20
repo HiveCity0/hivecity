@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Menü linklerini ayarlama
     initMenuLinks();
+
+    // Sosyal etkinlikleri yükle
+    loadSocialEvents();
 });
 
 // Slider Oluşturma Fonksiyonu
@@ -288,6 +291,196 @@ function loadClubs() {
         clubsContainer.appendChild(clubCard);
     });
 }
+// script.js
+
+// ... (diğer fonksiyonlar: createSlider, loadEvents, loadClubs, initModal, closeModal, initScrollAnimation, initMenuLinks)
+
+// --- YENİ veya GÜNCELLENMİŞ FONKSİYONLAR ---
+
+// `registerForEvent` ve `shareEvent` fonksiyonları tanımlanmalı (Örnek)
+function registerForEvent(eventId) {
+    const event = socialEventsConfig.find(e => e.id === eventId);
+    if (event) {
+        alert(`${event.title} etkinliğine kayıt olmak için yönlendiriliyorsunuz... (Bu kısım geliştirilecek)`);
+        // Örneğin: window.open(event.form || '#', '_blank');
+    }
+}
+
+function shareEvent(eventId) {
+    const event = socialEventsConfig.find(e => e.id === eventId);
+    if (event) {
+        const shareText = `Harika bir etkinlik: ${event.title}! Detaylar için HiveCity'ye göz atın.`;
+        if (navigator.share) {
+            navigator.share({
+                title: event.title,
+                text: shareText,
+                url: window.location.href, // Ya da etkinliğe özel bir sayfa URL'si varsa o
+            })
+            .then(() => console.log('Başarıyla paylaşıldı'))
+            .catch((error) => console.log('Paylaşım hatası:', error));
+        } else {
+            // Fallback: Örneğin bir linki kopyalama veya mailto
+            alert(`Paylaşmak için: ${shareText} - URL: ${window.location.href}`);
+        }
+    }
+}
+
+// script.js
+
+// ... (diğer fonksiyonlarınız) ...
+
+// `registerForEvent` fonksiyonunu güncelle
+function registerForEvent(eventId) {
+    const event = socialEventsConfig.find(e => e.id === eventId);
+    if (event) {
+        // Eğer form URL'si varsa ve "#" değilse, yeni sekmede aç
+        if (event.form && event.form !== "#") {
+            window.open(event.form, '_blank'); // Yeni sekmede açar
+        } else {
+            // Eğer form URL'si yoksa veya sadece "#" ise, bir mesaj göster
+            alert(`${event.title} etkinliği için şu anda aktif bir kayıt formu bulunmamaktadır.`);
+        }
+    } else {
+        console.error(`ID'si ${eventId} olan etkinlik bulunamadı.`);
+        alert("Etkinlik bilgileri yüklenirken bir sorun oluştu.");
+    }
+}
+
+// `shareEvent` fonksiyonu (bu zaten doğru çalışıyor olmalı)
+function shareEvent(eventId) {
+    const event = socialEventsConfig.find(e => e.id === eventId);
+    if (event) {
+        const shareText = `Harika bir etkinlik: ${event.title}! Detaylar için HiveCity'ye göz atın.`;
+        if (navigator.share) {
+            navigator.share({
+                title: event.title,
+                text: shareText,
+                url: window.location.href, // Ya da etkinliğe özel bir sayfa URL'si varsa o
+            })
+            .then(() => console.log('Başarıyla paylaşıldı'))
+            .catch((error) => console.log('Paylaşım hatası:', error));
+        } else {
+            // Fallback: Örneğin bir linki kopyalama veya mailto
+            alert(`Paylaşmak için: ${shareText} - URL: ${window.location.href}`);
+        }
+    }
+}
+
+// Sosyal etkinlikler için özel modal gösterme fonksiyonu (değişiklik yok)
+function showSocialEventModal(eventId) {
+    const modal = document.getElementById('detailModal');
+    const modalTitleEl = document.getElementById('modalTitle');
+    const modalContentEl = document.getElementById('modalContent');
+    const modalDialog = modal.querySelector('.modal-content');
+
+    if (!modal || !modalTitleEl || !modalContentEl || !modalDialog) {
+        console.error("Modal elementleri bulunamadı!");
+        return;
+    }
+
+    const event = socialEventsConfig.find(e => e.id === eventId);
+    if (!event) {
+        console.error(`ID'si ${eventId} olan sosyal etkinlik bulunamadı.`);
+        return;
+    }
+
+    const categoriesHtml = event.categories && event.categories.length > 0 ? `
+        <h4>Etkinlik Kategorileri</h4>
+        <ul class="event-categories">
+            ${event.categories.map(category => `<li><i class="fas fa-tags"></i> ${category}</li>`).join('')}
+        </ul>` : '';
+
+    const requirementsHtml = event.requirements && event.requirements.length > 0 ? `
+        <h4>Katılım Koşulları</h4>
+        <ul class="participation-conditions">
+            ${event.requirements.map(req => `<li><i class="fas fa-info-circle"></i> ${req}</li>`).join('')}
+        </ul>` : '';
+
+    const socialEventContent = `
+        <div class="social-event-modal-details">
+            <div class="event-modal-header">
+                <img src="${event.imageUrl || 'https://picsum.photos/seed/social_placeholder_modal/600/300'}" alt="${event.title}" class="event-modal-banner">
+            </div>
+            <div class="event-modal-main-info">
+                <p class="event-date"><i class="far fa-calendar-alt"></i> ${event.date}</p>
+                <p class="event-location"><i class="fas fa-map-marker-alt"></i> ${event.location}</p>
+            </div>
+            <hr>
+            <div class="event-modal-description">
+                <h4>Etkinlik Hakkında</h4>
+                <p>${event.mainDescription || event.description}</p>
+                ${categoriesHtml}
+                ${requirementsHtml}
+            </div>
+            <div class="event-modal-actions">
+                <button class="register-btn" onclick="registerForEvent(${event.id})">Etkinliğe Katıl</button>
+                <button class="share-btn" onclick="shareEvent(${event.id})"><i class="fas fa-share-alt"></i> Paylaş</button>
+            </div>
+        </div>
+    `;
+
+    modalTitleEl.textContent = event.title;
+    modalContentEl.innerHTML = socialEventContent;
+
+    modal.style.display = "block";
+    document.body.style.overflow = "hidden";
+
+    modalDialog.classList.remove('animate__zoomOut');
+    modalDialog.classList.add('animate__animated', 'animate__zoomIn');
+}
+
+
+// Sosyal Etkinlikleri Yükleme Fonksiyonu (değişiklik yok)
+function loadSocialEvents() {
+    const socialEventsContainer = document.querySelector('.social-events-container');
+    if (!socialEventsContainer) {
+        console.error('Hata: ".social-events-container" elementi bulunamadı.');
+        return;
+    }
+    socialEventsContainer.innerHTML = '';
+
+    socialEventsConfig.forEach((event, index) => {
+        const eventCard = document.createElement('div');
+        eventCard.className = 'event-card social-event-card';
+
+        const imageContainer = document.createElement('div');
+        imageContainer.className = 'event-image';
+        const img = document.createElement('img');
+        img.src = event.imageUrl || 'https://picsum.photos/seed/social_placeholder/400/250';
+        img.alt = event.title;
+        imageContainer.appendChild(img);
+
+        const detailsContainer = document.createElement('div');
+        detailsContainer.className = 'event-details';
+
+        const titleH3 = document.createElement('h3');
+        titleH3.textContent = event.title;
+
+        const dateP = document.createElement('p');
+        dateP.className = 'event-date';
+        dateP.innerHTML = `<i class="far fa-calendar-alt"></i> ${event.date}`;
+
+        const locationP = document.createElement('p');
+        locationP.className = 'event-location';
+        locationP.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${event.location}`;
+
+        const descriptionP = document.createElement('p');
+        descriptionP.className = 'event-description';
+        descriptionP.textContent = event.description;
+
+        detailsContainer.appendChild(titleH3);
+        detailsContainer.appendChild(dateP);
+        detailsContainer.appendChild(locationP);
+        detailsContainer.appendChild(descriptionP);
+
+        eventCard.appendChild(imageContainer);
+        eventCard.appendChild(detailsContainer);
+
+        eventCard.addEventListener('click', () => showSocialEventModal(event.id));
+        socialEventsContainer.appendChild(eventCard);
+    });
+}
+
 
 // Modal İşlevleri
 function initModal() {
@@ -330,6 +523,7 @@ function showModal(title, content) {
         modal.querySelector('.modal-content').classList.add('animate__zoomIn');
     }, 100);
 }
+
 
 // Modal Kapatma Fonksiyonu
 function closeModal() {
