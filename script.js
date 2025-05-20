@@ -365,95 +365,36 @@ function shareEvent(eventId) {
         }
     }
 }
+// script.js (İlgili Kısım - Değişiklik Yok)
 
-// Sosyal etkinlikler için özel modal gösterme fonksiyonu (değişiklik yok)
-function showSocialEventModal(eventId) {
-    const modal = document.getElementById('detailModal');
-    const modalTitleEl = document.getElementById('modalTitle');
-    const modalContentEl = document.getElementById('modalContent');
-    const modalDialog = modal.querySelector('.modal-content');
-
-    if (!modal || !modalTitleEl || !modalContentEl || !modalDialog) {
-        console.error("Modal elementleri bulunamadı!");
-        return;
-    }
-
-    const event = socialEventsConfig.find(e => e.id === eventId);
-    if (!event) {
-        console.error(`ID'si ${eventId} olan sosyal etkinlik bulunamadı.`);
-        return;
-    }
-
-    const categoriesHtml = event.categories && event.categories.length > 0 ? `
-        <h4>Etkinlik Kategorileri</h4>
-        <ul class="event-categories">
-            ${event.categories.map(category => `<li><i class="fas fa-tags"></i> ${category}</li>`).join('')}
-        </ul>` : '';
-
-    const requirementsHtml = event.requirements && event.requirements.length > 0 ? `
-        <h4>Katılım Koşulları</h4>
-        <ul class="participation-conditions">
-            ${event.requirements.map(req => `<li><i class="fas fa-info-circle"></i> ${req}</li>`).join('')}
-        </ul>` : '';
-
-    const socialEventContent = `
-        <div class="social-event-modal-details">
-            <div class="event-modal-header">
-                <img src="${event.imageUrl || 'https://picsum.photos/seed/social_placeholder_modal/600/300'}" alt="${event.title}" class="event-modal-banner">
-            </div>
-            <div class="event-modal-main-info">
-                <p class="event-date"><i class="far fa-calendar-alt"></i> ${event.date}</p>
-                <p class="event-location"><i class="fas fa-map-marker-alt"></i> ${event.location}</p>
-            </div>
-            <hr>
-            <div class="event-modal-description">
-                <h4>Etkinlik Hakkında</h4>
-                <p>${event.mainDescription || event.description}</p>
-                ${categoriesHtml}
-                ${requirementsHtml}
-            </div>
-            <div class="event-modal-actions">
-                <button class="register-btn" onclick="registerForEvent(${event.id})">Etkinliğe Katıl</button>
-                <button class="share-btn" onclick="shareEvent(${event.id})"><i class="fas fa-share-alt"></i> Paylaş</button>
-            </div>
-        </div>
-    `;
-
-    modalTitleEl.textContent = event.title;
-    modalContentEl.innerHTML = socialEventContent;
-
-    modal.style.display = "block";
-    document.body.style.overflow = "hidden";
-
-    modalDialog.classList.remove('animate__zoomOut');
-    modalDialog.classList.add('animate__animated', 'animate__zoomIn');
-}
-
-
-// Sosyal Etkinlikleri Yükleme Fonksiyonu (değişiklik yok)
+// Sosyal Etkinlikleri Yükleme Fonksiyonu
 function loadSocialEvents() {
     const socialEventsContainer = document.querySelector('.social-events-container');
     if (!socialEventsContainer) {
         console.error('Hata: ".social-events-container" elementi bulunamadı.');
         return;
     }
-    socialEventsContainer.innerHTML = '';
+    socialEventsContainer.innerHTML = ''; // İçeriği temizle
 
     socialEventsConfig.forEach((event, index) => {
         const eventCard = document.createElement('div');
+        // Hem genel event-card stillerini alır hem de social-event-card ile özelleştirilebilir.
         eventCard.className = 'event-card social-event-card';
 
+        // Resim kısmı
         const imageContainer = document.createElement('div');
-        imageContainer.className = 'event-image';
+        imageContainer.className = 'event-image'; // Mevcut class'ı kullan
         const img = document.createElement('img');
         img.src = event.imageUrl || 'https://picsum.photos/seed/social_placeholder/400/250';
         img.alt = event.title;
         imageContainer.appendChild(img);
 
+        // Detaylar kısmı
         const detailsContainer = document.createElement('div');
-        detailsContainer.className = 'event-details';
+        detailsContainer.className = 'event-details'; // Mevcut class'ı kullan
 
         const titleH3 = document.createElement('h3');
+        // titleH3.className = 'event-title'; // CSS ile h3 hedeflenebilir
         titleH3.textContent = event.title;
 
         const dateP = document.createElement('p');
@@ -466,7 +407,7 @@ function loadSocialEvents() {
 
         const descriptionP = document.createElement('p');
         descriptionP.className = 'event-description';
-        descriptionP.textContent = event.description;
+        descriptionP.textContent = event.description; // Kartta kısa açıklama
 
         detailsContainer.appendChild(titleH3);
         detailsContainer.appendChild(dateP);
@@ -476,6 +417,7 @@ function loadSocialEvents() {
         eventCard.appendChild(imageContainer);
         eventCard.appendChild(detailsContainer);
 
+        // Kartın tamamına tıklama olayı
         eventCard.addEventListener('click', () => showSocialEventModal(event.id));
         socialEventsContainer.appendChild(eventCard);
     });

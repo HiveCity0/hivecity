@@ -326,5 +326,84 @@
     margin-right: 8px;
 }
 
+/* style.css - Sosyal Etkinlik Kartları İçin Ek Stiller */
 
-/* İkonlar için FontAwesome'un yüklü olduğundan emin olun */
+/*
+   Mevcut .events-container, .clubs-container, .social-events-container
+   seçicinizin zaten aşağıdaki gibi grid tanımlamasına sahip olduğunu varsayıyoruz:
+*/
+/*
+.events-container,
+.clubs-container,
+.social-events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: left;
+    padding: 0 15px;
+}
+*/
+
+/*
+   Mevcut .event-card seçicinizin de zaten temel kart stillerine
+   (background, border-radius, box-shadow, overflow, transition) sahip
+   olduğunu varsayıyoruz.
+*/
+
+/* Sosyal Etkinlik Kartlarına Özel Dokunuşlar */
+.social-event-card {
+    border-left: 6px solid var(--success-color); /* Sol tarafa canlı bir vurgu (yeşil) */
+    position: relative; /* Pseudo-elementler için */
+    overflow: hidden; /* Pseudo-elementlerin taşmasını engelle */
+}
+
+/* Sosyal etkinlik başlığına farklı bir renk veya stil */
+.social-event-card .event-details h3 {
+    color: var(--success-color); /* Başlık rengini vurgu rengiyle eşleştir */
+    font-weight: 600; /* Biraz daha kalın */
+}
+
+/* Resim üzerine gelince hafif bir efekt */
+.social-event-card .event-image img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.social-event-card:hover .event-image img {
+    transform: scale(1.08); /* Resmi biraz büyüt */
+    filter: brightness(0.9); /* Resmi hafifçe karartarak yazının öne çıkmasını sağla */
+}
+
+/* Kartın köşesine küçük bir "Sosyal" etiketi ekleyebiliriz (Opsiyonel) */
+.social-event-card::before {
+    content: "SOSYAL";
+    position: absolute;
+    top: 15px;
+    right: -30px; /* Başlangıçta dışarıda */
+    background-color: var(--success-color);
+    color: var(--white-color);
+    padding: 5px 30px; /* Sağa doğru uzun padding */
+    font-size: 0.7rem;
+    font-weight: bold;
+    transform: rotate(45deg);
+    transform-origin: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.9;
+    transition: right 0.3s ease-out;
+}
+
+.social-event-card:hover::before {
+    right: -25px; /* Hover'da içeri doğru kaydır */
+}
+
+/* İkon renklerini sosyal etkinlikler için değiştirebiliriz (Opsiyonel) */
+.social-event-card .event-date i,
+.social-event-card .event-location i {
+    color: var(--success-color); /* İkonları da vurgu rengiyle eşleştir */
+}
+
+/* Açıklama metni için belki biraz daha vurgu */
+.social-event-card .event-description {
+    font-style: italic;
+    color: #555; /* Biraz daha koyu gri */
+}
