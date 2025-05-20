@@ -14,9 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Modal işlevleri
     initModal();
 
-    // Menü linklerini ayarlama
-    initMenuLinks();
-
     // Sosyal etkinlikleri yükle
     loadSocialEvents();
 });
@@ -291,11 +288,6 @@ function loadClubs() {
         clubsContainer.appendChild(clubCard);
     });
 }
-// script.js
-
-// ... (diğer fonksiyonlar: createSlider, loadEvents, loadClubs, initModal, closeModal, initScrollAnimation, initMenuLinks)
-
-// --- YENİ veya GÜNCELLENMİŞ FONKSİYONLAR ---
 
 // `registerForEvent` ve `shareEvent` fonksiyonları tanımlanmalı (Örnek)
 function registerForEvent(eventId) {
@@ -368,60 +360,7 @@ function shareEvent(eventId) {
 // script.js (İlgili Kısım - Değişiklik Yok)
 
 // Sosyal Etkinlikleri Yükleme Fonksiyonu
-function loadSocialEvents() {
-    const socialEventsContainer = document.querySelector('.social-events-container');
-    if (!socialEventsContainer) {
-        console.error('Hata: ".social-events-container" elementi bulunamadı.');
-        return;
-    }
-    socialEventsContainer.innerHTML = ''; // İçeriği temizle
-
-    socialEventsConfig.forEach((event, index) => {
-        const eventCard = document.createElement('div');
-        // Hem genel event-card stillerini alır hem de social-event-card ile özelleştirilebilir.
-        eventCard.className = 'event-card social-event-card';
-
-        // Resim kısmı
-        const imageContainer = document.createElement('div');
-        imageContainer.className = 'event-image'; // Mevcut class'ı kullan
-        const img = document.createElement('img');
-        img.src = event.imageUrl || 'https://picsum.photos/seed/social_placeholder/400/250';
-        img.alt = event.title;
-        imageContainer.appendChild(img);
-
-        // Detaylar kısmı
-        const detailsContainer = document.createElement('div');
-        detailsContainer.className = 'event-details'; // Mevcut class'ı kullan
-
-        const titleH3 = document.createElement('h3');
-        // titleH3.className = 'event-title'; // CSS ile h3 hedeflenebilir
-        titleH3.textContent = event.title;
-
-        const dateP = document.createElement('p');
-        dateP.className = 'event-date';
-        dateP.innerHTML = `<i class="far fa-calendar-alt"></i> ${event.date}`;
-
-        const locationP = document.createElement('p');
-        locationP.className = 'event-location';
-        locationP.innerHTML = `<i class="fas fa-map-marker-alt"></i> ${event.location}`;
-
-        const descriptionP = document.createElement('p');
-        descriptionP.className = 'event-description';
-        descriptionP.textContent = event.description; // Kartta kısa açıklama
-
-        detailsContainer.appendChild(titleH3);
-        detailsContainer.appendChild(dateP);
-        detailsContainer.appendChild(locationP);
-        detailsContainer.appendChild(descriptionP);
-
-        eventCard.appendChild(imageContainer);
-        eventCard.appendChild(detailsContainer);
-
-        // Kartın tamamına tıklama olayı
-        eventCard.addEventListener('click', () => showSocialEventModal(event.id));
-        socialEventsContainer.appendChild(eventCard);
-    });
-}
+function loadSocialEvents() {}
 
 
 // Modal İşlevleri
@@ -514,24 +453,3 @@ function initScrollAnimation() {
     window.dispatchEvent(new Event('scroll'));
 }
 
-// Menü linklerini ayarlama fonksiyonu
-function initMenuLinks() {
-    const navLinks = document.querySelectorAll('nav a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href').substring(1);
-            if (targetId) {
-                const targetSection = document.getElementById(targetId);
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            }
-        });
-    });
-}
