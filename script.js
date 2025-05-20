@@ -380,22 +380,20 @@ function initScrollAnimation() {
 
 // Menü linklerini ayarlama fonksiyonu
 function initMenuLinks() {
-    const menuLinks = document.querySelectorAll('nav ul li a');
+    const navLinks = document.querySelectorAll('nav a');
     
-    menuLinks.forEach(link => {
+    navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Aktif link'i güncelle
-            menuLinks.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-            
-            // İlgili bölüme scroll
             const targetId = this.getAttribute('href').substring(1);
             if (targetId) {
-                const targetSection = document.querySelector(`#${targetId}`);
+                const targetSection = document.getElementById(targetId);
                 if (targetSection) {
-                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             }
         });
