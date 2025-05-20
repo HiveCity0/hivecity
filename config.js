@@ -142,29 +142,133 @@ const clubsConfig = [
 const socialEventsConfig = [
     {
         id: 1,
-        title: "Kampüs Pikniği",
-        date: "2024-09-20",
-        location: "Üniversite Çim Alan",
-        description: "Dönem başlangıcını kutlamak için harika bir piknik! Müzik, oyunlar ve lezzetli yiyecekler.", // Kartta görünecek
-        mainDescription: "Yeni döneme merhaba demek ve arkadaşlarımızla keyifli vakit geçirmek için düzenlediğimiz geleneksel kampüs pikniğimize davetlisiniz. Getireceğiniz yiyecek ve içeceklerle ortak bir sofra kuracağız. Unutmayın, en güzel anılar paylaştıkça çoğalır!", // Modal için ana açıklama
-        imageUrl: "https://picsum.photos/seed/picnic/400/250",
-        registrationDeadline: "2024-09-18", // Opsiyonel, eğer registerForEvent kullanacaksa
-        form: "https://github.com/HiveCity0/hivecity/settings/pages", // Opsiyonel
-        categories: [" Eğlence", "Sosyal", "Açık Hava"], // YENİ ALAN
-        requirements: ["Herkes davetlidir.", "Yanınızda atıştırmalık getirebilirsiniz."] // YENİ ALAN
+        title: "Fırat Bilişim Topluluğu Tanışma Günü",
+        date: "2024-09-15",
+        location: "Mühendislik Amfi",
+        description: "Yeni üyelerle tanışma ve teknoloji konuşmaları.",
+        mainDescription: "Fırat Bilişim Topluluğu olarak döneme hızlı bir giriş yapıyoruz. Yeni katılan üyelerimizle tanışıyor, yazılım, yapay zeka ve siber güvenlik üzerine sohbet ediyoruz. Ayrıca kulüp projelerimiz tanıtılacaktır.",
+        imageUrl: "https://picsum.photos/seed/bilisim/400/250",
+        registrationDeadline: "2024-09-13",
+        form: "#",
+        categories: ["Teknoloji", "Tanışma", "Eğitim"],
+        requirements: ["Teknolojiye ilgi duymak yeterlidir."]
     },
     {
         id: 2,
-        title: "Kitap Okuma Günü",
-        date: "2024-10-12",
-        location: "Kütüphane Bahçesi",
-        description: "En sevdiğiniz kitapları kapıp gelin, sessizliğin ve edebiyatın tadını çıkaralım.",
-        mainDescription: "Kitap kurtları buluşuyor! Kütüphane bahçesinin huzurlu atmosferinde, seçtiğimiz bir tema etrafında kitaplarımızı okuyacak ve ardından kısa bir sohbet gerçekleştireceğiz. Kahvenizi ve kitabınızı alıp gelmeyi unutmayın.",
-        imageUrl: "https://picsum.photos/seed/bookday/400/250",
-        registrationDeadline: "2024-10-10",
+        title: "IEEE Tanışma ve Kahve Etkinliği",
+        date: "2024-09-16",
+        location: "Elektrik-Elektronik Binası Fuaye Alanı",
+        description: "IEEE ailesine katıl, projeleri ve yarışmaları öğren.",
+        mainDescription: "IEEE Fırat olarak yeni dönem tanışma etkinliğimize seni de bekliyoruz. Geçmiş dönemlerdeki yarışmalar, projeler ve eğitim fırsatları hakkında bilgi vereceğiz.",
+        imageUrl: "https://picsum.photos/seed/ieee/400/250",
+        registrationDeadline: "2024-09-14",
         form: "#",
-        categories: ["Kültür", "Edebiyat", "Sakin Etkinlik"], // YENİ ALAN
-        requirements: ["Kendi kitabınızı getirin.", "Sessizliğe özen gösterilmesi rica olunur."] // YENİ ALAN
+        categories: ["Teknoloji", "Topluluk", "Eğitim"],
+        requirements: ["Mühendislik öğrencisi olmak tercih edilir."]
     },
-    // ... diğer sosyal etkinlikler
+    {
+        id: 3,
+        title: "Tarih ve Kültür Kulübü Gezi Planlama Toplantısı",
+        date: "2024-09-18",
+        location: "Fen-Edebiyat Konferans Salonu",
+        description: "Yeni dönem kültürel gezileri konuşuyoruz.",
+        mainDescription: "Tarih ve Kültür Kulübü olarak bu dönem planladığımız kültürel geziler ve etkinlikleri birlikte konuşacağımız toplantımıza davetlisiniz.",
+        imageUrl: "https://picsum.photos/seed/tarihkulubu/400/250",
+        registrationDeadline: "2024-09-17",
+        form: "#",
+        categories: ["Kültür", "Tarih", "Gezi"],
+        requirements: ["Katılım ücretsizdir.", "Kayıt zorunludur."]
+    },
+    {
+        id: 4,
+        title: "Sağlık Kulübü: Sağlıklı Yaşam Semineri",
+        date: "2024-09-22",
+        location: "Sağlık Bilimleri Konferans Salonu",
+        description: "Beslenme, uyku ve stres yönetimi hakkında bilgiler.",
+        mainDescription: "Sağlık Kulübü olarak düzenlediğimiz bu seminerde sağlıklı yaşamın üç temel taşı olan beslenme, uyku ve stres yönetimi konularında uzman konuşmacılar yer alacak.",
+        imageUrl: "https://picsum.photos/seed/saglik/400/250",
+        registrationDeadline: "2024-09-20",
+        form: "#",
+        categories: ["Sağlık", "Eğitim", "Kişisel Gelişim"],
+        requirements: ["Katılım belgesi verilecektir."]
+    },
+    {
+        id: 5,
+        title: "Fırat Fotoğrafçılık Topluluğu Tanışma ve Mini Çekim",
+        date: "2024-09-17",
+        location: "Üniversite Kampüs Bahçesi",
+        description: "Fotoğraf tutkunları için tanışma ve uygulama günü.",
+        mainDescription: "Kameranı kap gel! Fotoğrafçılık kulübü olarak dönem başı tanışma ve kısa bir kampüs çekim etkinliği düzenliyoruz.",
+        imageUrl: "https://picsum.photos/seed/fotograf/400/250",
+        registrationDeadline: "2024-09-16",
+        form: "#",
+        categories: ["Sanat", "Fotoğraf", "Sosyal"],
+        requirements: ["Telefon kamerası yeterlidir."]
+    },
+    {
+        id: 6,
+        title: "Müzik Topluluğu Açılış Konseri",
+        date: "2024-09-28",
+        location: "Kültür Merkezi Sahnesi",
+        description: "Canlı müzik performansları ve üyelik tanıtımı.",
+        mainDescription: "Yeni üyelerle tanışmak ve kulübümüzü tanıtmak amacıyla müzik dolu bir konser düzenliyoruz. Fırat Üniversitesi Müzik Topluluğu sahnede!",
+        imageUrl: "https://picsum.photos/seed/muzik/400/250",
+        registrationDeadline: "2024-09-26",
+        form: "#",
+        categories: ["Sanat", "Müzik", "Sosyal"],
+        requirements: ["Konser ücretsizdir."]
+    },
+    {
+        id: 7,
+        title: "Fırat Tiyatro Topluluğu Oyuncu Seçmeleri",
+        date: "2024-10-01",
+        location: "Kültür Merkezi Tiyatro Salonu",
+        description: "Sahneye adım atmak isteyenler için seçmeler başlıyor.",
+        mainDescription: "Fırat Üniversitesi Tiyatro Topluluğu yeni oyuncularını arıyor! Kendine güveniyorsan, sahnede olmak istiyorsan bu fırsatı kaçırma.",
+        imageUrl: "https://picsum.photos/seed/tiyatro/400/250",
+        registrationDeadline: "2024-09-29",
+        form: "#",
+        categories: ["Sanat", "Tiyatro", "Kendini İfade"],
+        requirements: ["Başvuru formu doldurulması gereklidir."]
+    },
+    {
+        id: 8,
+        title: "Dans Topluluğu Workshop Günü",
+        date: "2024-09-25",
+        location: "Spor Salonu 2",
+        description: "Farklı dans türlerinin tanıtıldığı uygulamalı etkinlik.",
+        mainDescription: "Dans etmeyi seviyor musun? Hip-hop, salsa, modern dans gibi çeşitli türlerin tanıtılacağı bu workshop’a bekliyoruz.",
+        imageUrl: "https://picsum.photos/seed/dans/400/250",
+        registrationDeadline: "2024-09-23",
+        form: "#",
+        categories: ["Sanat", "Dans", "Hareket"],
+        requirements: ["Spor kıyafet önerilir."]
+    },
+    {
+        id: 9,
+        title: "Satranç Kulübü Açılış Turnuvası",
+        date: "2024-10-05",
+        location: "Merkez Kütüphane Zemin Kat",
+        description: "Yeni dönem başlangıcında mini bir satranç turnuvası.",
+        mainDescription: "Fırat Satranç Kulübü yeni döneme turnuva ile başlıyor. Katılımcılar ödüller için yarışacak. Tüm seviyelere açıktır.",
+        imageUrl: "https://picsum.photos/seed/satranc/400/250",
+        registrationDeadline: "2024-10-03",
+        form: "#",
+        categories: ["Zeka", "Turnuva", "Eğlence"],
+        requirements: ["Kendi satranç takımınızı getirebilirsiniz."]
+    },
+    {
+        id: 10,
+        title: "Edebiyat Kulübü Şiir Dinletisi",
+        date: "2024-10-10",
+        location: "Fen-Edebiyat Fakültesi Bahçesi",
+        description: "Şiir okumaları ve serbest kürsü akşamı.",
+        mainDescription: "Edebiyat Kulübü’nün düzenlediği şiir dinletisinde kendi şiirlerinizi okuyabilir, edebiyatseverlerle duygularınızı paylaşabilirsiniz.",
+        imageUrl: "https://picsum.photos/seed/edebiyat/400/250",
+        registrationDeadline: "2024-10-08",
+        form: "#",
+        categories: ["Kültür", "Edebiyat", "Şiir"],
+        requirements: ["Şiir okumak isteğe bağlıdır."]
+    }
 ];
+
