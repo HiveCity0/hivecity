@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Modal işlevleri
     initModal();
+
+    // Menü linklerini ayarlama
+    initMenuLinks();
 });
 
 // Slider Oluşturma Fonksiyonu
@@ -373,4 +376,54 @@ function initScrollAnimation() {
     
     // Sayfa yüklendiğinde scroll pozisyonunu kontrol etme
     window.dispatchEvent(new Event('scroll'));
+}
+
+// Menü Linklerini Ayarlama Fonksiyonu
+function initMenuLinks() {
+    const eventsLink = document.getElementById('eventsLink');
+    const clubsLink = document.getElementById('clubsLink');
+    const eventsSection = document.getElementById('eventsSection');
+    const clubsSection = document.getElementById('clubsSection');
+
+    // Tüm bölümleri gizle
+    function hideAllSections() {
+        eventsSection.style.display = 'none';
+        clubsSection.style.display = 'none';
+    }
+
+    // Etkinlikler linkine tıklama
+    eventsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        hideAllSections();
+        eventsSection.style.display = 'block';
+        eventsSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Aktif menü öğesini güncelle
+        document.querySelectorAll('nav ul li a').forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+    });
+
+    // Kulüpler linkine tıklama
+    clubsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        hideAllSections();
+        clubsSection.style.display = 'block';
+        clubsSection.scrollIntoView({ behavior: 'smooth' });
+        
+        // Aktif menü öğesini güncelle
+        document.querySelectorAll('nav ul li a').forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+    });
+
+    // Ana sayfa linkine tıklama
+    document.querySelector('nav ul li a[href="#"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        eventsSection.style.display = 'block';
+        clubsSection.style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        
+        // Aktif menü öğesini güncelle
+        document.querySelectorAll('nav ul li a').forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+    });
 } 
