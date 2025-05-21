@@ -37,48 +37,48 @@ const eventsConfig = [
     {
         id: 1,
         title: "Konser: Müzik Kulübü",
-        date: "15 Haziran 2023, 19:00",
+        date: "15 Haziran 2025, 19:00",
         location: "Ana Kampüs Amfi Tiyatro",
         description: "Müzik kulübümüzün hazırladığı yıl sonu konseri için tüm öğrencilerimizi bekliyoruz.",
         imageUrl: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        registrationDeadline: "13 Haziran 2023"
+        registrationDeadline: "13 Haziran 2025"
     },
     {
         id: 2,
         title: "Kariyer Günleri",
-        date: "20-22 Haziran 2023, 10:00-16:00",
+        date: "20-22 Haziran 2025, 10:00-16:00",
         location: "Merkez Konferans Salonu",
         description: "Sektörün önde gelen şirketleriyle tanışma ve networking fırsatı yakalayın.",
         imageUrl: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        registrationDeadline: "18 Haziran 2023"
+        registrationDeadline: "18 Haziran 2025"
     },
     {
         id: 3,
         title: "Spor Şenliği",
-        date: "25 Haziran 2023, 09:00-17:00",
+        date: "25 Haziran 2025, 09:00-17:00",
         location: "Spor Kompleksi",
         description: "Farklı spor dallarında düzenlenecek turnuvalara katılın ve ödüller kazanın.",
         imageUrl: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        registrationDeadline: "20 Haziran 2023"
+        registrationDeadline: "20 Haziran 2025"
     },
     {
         id: 4,
         title: "Yapay Zeka Atölyesi",
-        date: "28 Haziran 2023, 13:00-16:00",
+        date: "28 Haziran 2025, 13:00-16:00",
         location: "Bilgisayar Mühendisliği Laboratuvarı",
         description: "Yapay zeka temellerini öğrenin ve kendi modelinizi geliştirin.",
         imageUrl: "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        registrationDeadline: "25 Haziran 2023"
+        registrationDeadline: "25 Haziran 2025"
     }
     ,
     {
         id: 5,
         title: "Yapay Zeka Atölyesi",
-        date: "28 Haziran 2023, 13:00-16:00",
+        date: "28 Haziran 2025, 13:00-16:00",
         location: "Bilgisayar Mühendisliği Laboratuvarı",
         description: "Yapay zeka temellerini öğrenin ve kendi modelinizi geliştirin.",
         imageUrl: "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        registrationDeadline: "25 Haziran 2023"
+        registrationDeadline: "25 Haziran 2025"
     }
 ];
 
@@ -143,12 +143,12 @@ const socialEventsConfig = [
     {
         id: 1,
         title: "Fırat Bilişim Topluluğu Tanışma Günü",
-        date: "2024-09-15",
+        date: "2025-09-15",
         location: "Mühendislik Amfi",
         description: "Yeni üyelerle tanışma ve teknoloji konuşmaları.",
         mainDescription: "Fırat Bilişim Topluluğu olarak döneme hızlı bir giriş yapıyoruz. Yeni katılan üyelerimizle tanışıyor, yazılım, yapay zeka ve siber güvenlik üzerine sohbet ediyoruz. Ayrıca kulüp projelerimiz tanıtılacaktır.",
         imageUrl: "https://picsum.photos/seed/bilisim/400/250",
-        registrationDeadline: "2024-09-13",
+        registrationDeadline: "2025-09-13",
         form: "#",
         categories: ["Teknoloji", "Tanışma", "Eğitim"],
         requirements: ["Teknolojiye ilgi duymak yeterlidir."]
@@ -156,12 +156,12 @@ const socialEventsConfig = [
     {
         id: 2,
         title: "IEEE Tanışma ve Kahve Etkinliği",
-        date: "2024-09-16",
+        date: "2025-09-16",
         location: "Elektrik-Elektronik Binası Fuaye Alanı",
         description: "IEEE ailesine katıl, projeleri ve yarışmaları öğren.",
         mainDescription: "IEEE Fırat olarak yeni dönem tanışma etkinliğimize seni de bekliyoruz. Geçmiş dönemlerdeki yarışmalar, projeler ve eğitim fırsatları hakkında bilgi vereceğiz.",
         imageUrl: "https://picsum.photos/seed/ieee/400/250",
-        registrationDeadline: "2024-09-14",
+        registrationDeadline: "2025-09-14",
         form: "#",
         categories: ["Teknoloji", "Topluluk", "Eğitim"],
         requirements: ["Mühendislik öğrencisi olmak tercih edilir."]
@@ -169,12 +169,12 @@ const socialEventsConfig = [
     {
         id: 3,
         title: "Tarih ve Kültür Kulübü Gezi Planlama Toplantısı",
-        date: "2024-09-18",
+        date: "2025-09-18",
         location: "Fen-Edebiyat Konferans Salonu",
         description: "Yeni dönem kültürel gezileri konuşuyoruz.",
         mainDescription: "Tarih ve Kültür Kulübü olarak bu dönem planladığımız kültürel geziler ve etkinlikleri birlikte konuşacağımız toplantımıza davetlisiniz.",
         imageUrl: "https://picsum.photos/seed/tarihkulubu/400/250",
-        registrationDeadline: "2024-09-17",
+        registrationDeadline: "2025-09-17",
         form: "#",
         categories: ["Kültür", "Tarih", "Gezi"],
         requirements: ["Katılım ücretsizdir.", "Kayıt zorunludur."]
@@ -182,12 +182,12 @@ const socialEventsConfig = [
     {
         id: 4,
         title: "Sağlık Kulübü: Sağlıklı Yaşam Semineri",
-        date: "2024-09-22",
+        date: "2025-09-22",
         location: "Sağlık Bilimleri Konferans Salonu",
         description: "Beslenme, uyku ve stres yönetimi hakkında bilgiler.",
         mainDescription: "Sağlık Kulübü olarak düzenlediğimiz bu seminerde sağlıklı yaşamın üç temel taşı olan beslenme, uyku ve stres yönetimi konularında uzman konuşmacılar yer alacak.",
         imageUrl: "https://picsum.photos/seed/saglik/400/250",
-        registrationDeadline: "2024-09-20",
+        registrationDeadline: "2025-09-20",
         form: "#",
         categories: ["Sağlık", "Eğitim", "Kişisel Gelişim"],
         requirements: ["Katılım belgesi verilecektir."]
@@ -195,12 +195,12 @@ const socialEventsConfig = [
     {
         id: 5,
         title: "Fırat Fotoğrafçılık Topluluğu Tanışma ve Mini Çekim",
-        date: "2024-09-17",
+        date: "2025-09-17",
         location: "Üniversite Kampüs Bahçesi",
         description: "Fotoğraf tutkunları için tanışma ve uygulama günü.",
         mainDescription: "Kameranı kap gel! Fotoğrafçılık kulübü olarak dönem başı tanışma ve kısa bir kampüs çekim etkinliği düzenliyoruz.",
         imageUrl: "https://picsum.photos/seed/fotograf/400/250",
-        registrationDeadline: "2024-09-16",
+        registrationDeadline: "2025-09-16",
         form: "#",
         categories: ["Sanat", "Fotoğraf", "Sosyal"],
         requirements: ["Telefon kamerası yeterlidir."]
@@ -208,12 +208,12 @@ const socialEventsConfig = [
     {
         id: 6,
         title: "Müzik Topluluğu Açılış Konseri",
-        date: "2024-09-28",
+        date: "2025-09-28",
         location: "Kültür Merkezi Sahnesi",
         description: "Canlı müzik performansları ve üyelik tanıtımı.",
         mainDescription: "Yeni üyelerle tanışmak ve kulübümüzü tanıtmak amacıyla müzik dolu bir konser düzenliyoruz. Fırat Üniversitesi Müzik Topluluğu sahnede!",
         imageUrl: "https://picsum.photos/seed/muzik/400/250",
-        registrationDeadline: "2024-09-26",
+        registrationDeadline: "2025-09-26",
         form: "#",
         categories: ["Sanat", "Müzik", "Sosyal"],
         requirements: ["Konser ücretsizdir."]
@@ -221,12 +221,12 @@ const socialEventsConfig = [
     {
         id: 7,
         title: "Fırat Tiyatro Topluluğu Oyuncu Seçmeleri",
-        date: "2024-10-01",
+        date: "2025-10-01",
         location: "Kültür Merkezi Tiyatro Salonu",
         description: "Sahneye adım atmak isteyenler için seçmeler başlıyor.",
         mainDescription: "Fırat Üniversitesi Tiyatro Topluluğu yeni oyuncularını arıyor! Kendine güveniyorsan, sahnede olmak istiyorsan bu fırsatı kaçırma.",
         imageUrl: "https://picsum.photos/seed/tiyatro/400/250",
-        registrationDeadline: "2024-09-29",
+        registrationDeadline: "2025-09-29",
         form: "#",
         categories: ["Sanat", "Tiyatro", "Kendini İfade"],
         requirements: ["Başvuru formu doldurulması gereklidir."]
@@ -234,12 +234,12 @@ const socialEventsConfig = [
     {
         id: 8,
         title: "Dans Topluluğu Workshop Günü",
-        date: "2024-09-25",
+        date: "2025-09-25",
         location: "Spor Salonu 2",
         description: "Farklı dans türlerinin tanıtıldığı uygulamalı etkinlik.",
         mainDescription: "Dans etmeyi seviyor musun? Hip-hop, salsa, modern dans gibi çeşitli türlerin tanıtılacağı bu workshop’a bekliyoruz.",
         imageUrl: "https://picsum.photos/seed/dans/400/250",
-        registrationDeadline: "2024-09-23",
+        registrationDeadline: "2025-09-23",
         form: "#",
         categories: ["Sanat", "Dans", "Hareket"],
         requirements: ["Spor kıyafet önerilir."]
@@ -247,12 +247,12 @@ const socialEventsConfig = [
     {
         id: 9,
         title: "Satranç Kulübü Açılış Turnuvası",
-        date: "2024-10-05",
+        date: "2025-10-05",
         location: "Merkez Kütüphane Zemin Kat",
         description: "Yeni dönem başlangıcında mini bir satranç turnuvası.",
         mainDescription: "Fırat Satranç Kulübü yeni döneme turnuva ile başlıyor. Katılımcılar ödüller için yarışacak. Tüm seviyelere açıktır.",
         imageUrl: "https://picsum.photos/seed/satranc/400/250",
-        registrationDeadline: "2024-10-03",
+        registrationDeadline: "2025-10-03",
         form: "#",
         categories: ["Zeka", "Turnuva", "Eğlence"],
         requirements: ["Kendi satranç takımınızı getirebilirsiniz."]
@@ -260,12 +260,25 @@ const socialEventsConfig = [
     {
         id: 10,
         title: "Edebiyat Kulübü Şiir Dinletisi",
-        date: "2024-10-10",
+        date: "2025-10-10",
         location: "Fen-Edebiyat Fakültesi Bahçesi",
         description: "Şiir okumaları ve serbest kürsü akşamı.",
         mainDescription: "Edebiyat Kulübü’nün düzenlediği şiir dinletisinde kendi şiirlerinizi okuyabilir, edebiyatseverlerle duygularınızı paylaşabilirsiniz.",
         imageUrl: "https://picsum.photos/seed/edebiyat/400/250",
-        registrationDeadline: "2024-10-08",
+        registrationDeadline: "2025-10-08",
+        form: "#",
+        categories: ["Kültür", "Edebiyat", "Şiir"],
+        requirements: ["Şiir okumak isteğe bağlıdır."]
+    },
+    {
+        id: 11,
+        title: "AAAAAAAAA",
+        date: "2025-10-10",
+        location: "Fen-Edebiyat Fakültesi Bahçesi",
+        description: "Şiir okumaları ve serbest kürsü akşamı.",
+        mainDescription: "Edebiyat Kulübü’nün düzenlediği şiir dinletisinde kendi şiirlerinizi okuyabilir, edebiyatseverlerle duygularınızı paylaşabilirsiniz.",
+        imageUrl: "https://picsum.photos/seed/edebiyat/400/250",
+        registrationDeadline: "2025-10-08",
         form: "#",
         categories: ["Kültür", "Edebiyat", "Şiir"],
         requirements: ["Şiir okumak isteğe bağlıdır."]
