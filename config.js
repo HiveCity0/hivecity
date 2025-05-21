@@ -70,16 +70,6 @@ const eventsConfig = [
         imageUrl: "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
         registrationDeadline: "25 Haziran 2025"
     }
-    ,
-    {
-        id: 5,
-        title: "Yapay Zeka Atölyesi",
-        date: "28 Haziran 2025, 13:00-16:00",
-        location: "Bilgisayar Mühendisliği Laboratuvarı",
-        description: "Yapay zeka temellerini öğrenin ve kendi modelinizi geliştirin.",
-        imageUrl: "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        registrationDeadline: "25 Haziran 2025"
-    }
 ];
 
 /**
