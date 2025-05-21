@@ -260,18 +260,5 @@ const socialEventsConfig = [
         categories: ["Kültür", "Edebiyat", "Şiir"],
         requirements: ["Şiir okumak isteğe bağlıdır."]
     },
-    {
-        id: 11,
-        title: "AAAAAAAAA",
-        date: "2025-10-10",
-        location: "Fen-Edebiyat Fakültesi Bahçesi",
-        description: "Şiir okumaları ve serbest kürsü akşamı.",
-        mainDescription: "Edebiyat Kulübü’nün düzenlediği şiir dinletisinde kendi şiirlerinizi okuyabilir, edebiyatseverlerle duygularınızı paylaşabilirsiniz.",
-        imageUrl: "https://picsum.photos/seed/edebiyat/400/250",
-        registrationDeadline: "2025-10-08",
-        form: "#",
-        categories: ["Kültür", "Edebiyat", "Şiir"],
-        requirements: ["Şiir okumak isteğe bağlıdır."]
-    }
 ];
 
