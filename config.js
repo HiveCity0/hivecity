@@ -165,7 +165,7 @@ const socialEventsConfig = [
         mainDescription: "Tarih ve Kültür Kulübü olarak bu dönem planladığımız kültürel geziler ve etkinlikleri birlikte konuşacağımız toplantımıza davetlisiniz.",
         imageUrl: "https://picsum.photos/seed/tarihkulubu/400/250",
         registrationDeadline: "2025-09-17",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLSdv9GwGHARd1e7JvTxEs4GDm780y5pga51PiaMdB1QfuZiiIg/viewform?usp=header",
         categories: ["Kültür", "Tarih", "Gezi"],
         requirements: ["Katılım ücretsizdir.", "Kayıt zorunludur."]
     },
