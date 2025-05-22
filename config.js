@@ -139,7 +139,7 @@ const socialEventsConfig = [
         mainDescription: "Fırat Bilişim Topluluğu olarak döneme hızlı bir giriş yapıyoruz. Yeni katılan üyelerimizle tanışıyor, yazılım, yapay zeka ve siber güvenlik üzerine sohbet ediyoruz. Ayrıca kulüp projelerimiz tanıtılacaktır.",
         imageUrl: "https://picsum.photos/seed/bilisim/400/250",
         registrationDeadline: "2025-09-13",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLSdrmlS1lIu_LGn-lBBdcdHSvrBEGyzEyoPSBi9qxaOSEBaoJQ/viewform?usp=header",
         categories: ["Teknoloji", "Tanışma", "Eğitim"],
         requirements: ["Teknolojiye ilgi duymak yeterlidir."]
     },
