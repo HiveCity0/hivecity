@@ -204,7 +204,7 @@ const socialEventsConfig = [
         mainDescription: "Yeni üyelerle tanışmak ve kulübümüzü tanıtmak amacıyla müzik dolu bir konser düzenliyoruz. Fırat Üniversitesi Müzik Topluluğu sahnede!",
         imageUrl: "https://picsum.photos/seed/muzik/400/250",
         registrationDeadline: "2025-09-26",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLSf3clAAixi7Y6kUXT5qWnmmGyiNGrUvzNH_AL7RbW_gj_YhtA/viewform?usp=header",
         categories: ["Sanat", "Müzik", "Sosyal"],
         requirements: ["Konser ücretsizdir."]
     },
