@@ -191,7 +191,7 @@ const socialEventsConfig = [
         mainDescription: "Kameranı kap gel! Fotoğrafçılık kulübü olarak dönem başı tanışma ve kısa bir kampüs çekim etkinliği düzenliyoruz.",
         imageUrl: "https://picsum.photos/seed/fotograf/400/250",
         registrationDeadline: "2025-09-16",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLSdFknxAZbXvt5TR5sRns0kL90fbZ185df_OgEVmRYKE6dhBng/viewform?usp=header",
         categories: ["Sanat", "Fotoğraf", "Sosyal"],
         requirements: ["Telefon kamerası yeterlidir."]
     },
