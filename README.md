@@ -47,6 +47,7 @@ const eventsConfig = [
         description: "Etkinlik açıklaması",
         imageUrl: "resim-url",
         registrationDeadline: "Son Kayıt Tarihi"
+        https://docs.google.com/forms/d/e/1FAIpQLSdrmlS1lIu_LGn-lBBdcdHSvrBEGyzEyoPSBi9qxaOSEBaoJQ/viewform?usp=header
     },
     // Diğer etkinlikler...
 ];
