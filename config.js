@@ -243,7 +243,7 @@ const socialEventsConfig = [
         mainDescription: "Fırat Satranç Kulübü yeni döneme turnuva ile başlıyor. Katılımcılar ödüller için yarışacak. Tüm seviyelere açıktır.",
         imageUrl: "https://picsum.photos/seed/satranc/400/250",
         registrationDeadline: "2025-10-03",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLSeRFbJsm_IEwRAtiBYSB7RFs--6RfI3T69QZY8-4OduWUQVxw/viewform?usp=header",
         categories: ["Zeka", "Turnuva", "Eğlence"],
         requirements: ["Kendi satranç takımınızı getirebilirsiniz."]
     },
