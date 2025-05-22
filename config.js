@@ -152,7 +152,7 @@ const socialEventsConfig = [
         mainDescription: "IEEE Fırat olarak yeni dönem tanışma etkinliğimize seni de bekliyoruz. Geçmiş dönemlerdeki yarışmalar, projeler ve eğitim fırsatları hakkında bilgi vereceğiz.",
         imageUrl: "https://picsum.photos/seed/ieee/400/250",
         registrationDeadline: "2025-09-14",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLSdBpAm1jI2YnKPcBbVBWHuYCVJu3IXPesLRnH4vK-uTaO8S0g/viewform?usp=header",
         categories: ["Teknoloji", "Topluluk", "Eğitim"],
         requirements: ["Mühendislik öğrencisi olmak tercih edilir."]
     },
