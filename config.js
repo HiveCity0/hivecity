@@ -217,7 +217,7 @@ const socialEventsConfig = [
         mainDescription: "Fırat Üniversitesi Tiyatro Topluluğu yeni oyuncularını arıyor! Kendine güveniyorsan, sahnede olmak istiyorsan bu fırsatı kaçırma.",
         imageUrl: "https://picsum.photos/seed/tiyatro/400/250",
         registrationDeadline: "2025-09-29",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLSf3clAAixi7Y6kUXT5qWnmmGyiNGrUvzNH_AL7RbW_gj_YhtA/viewform?usp=header",
         categories: ["Sanat", "Tiyatro", "Kendini İfade"],
         requirements: ["Başvuru formu doldurulması gereklidir."]
     },
