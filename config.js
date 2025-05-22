@@ -204,7 +204,7 @@ const socialEventsConfig = [
         mainDescription: "Yeni üyelerle tanışmak ve kulübümüzü tanıtmak amacıyla müzik dolu bir konser düzenliyoruz. Fırat Üniversitesi Müzik Topluluğu sahnede!",
         imageUrl: "https://picsum.photos/seed/muzik/400/250",
         registrationDeadline: "2025-09-26",
-        form: "https://docs.google.com/forms/d/e/1FAIpQLSf3clAAixi7Y6kUXT5qWnmmGyiNGrUvzNH_AL7RbW_gj_YhtA/viewform?usp=header",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLScPuKq1Rn3IFu6e2HWy8fHNWy-mOSY1oIsVGybGTw4o8Btd1g/viewform?usp=header",
         categories: ["Sanat", "Müzik", "Sosyal"],
         requirements: ["Konser ücretsizdir."]
     },
@@ -230,7 +230,7 @@ const socialEventsConfig = [
         mainDescription: "Dans etmeyi seviyor musun? Hip-hop, salsa, modern dans gibi çeşitli türlerin tanıtılacağı bu workshop’a bekliyoruz.",
         imageUrl: "https://picsum.photos/seed/dans/400/250",
         registrationDeadline: "2025-09-23",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLSflFy9O8tWHwnlZOMFI3d27aafC3X88WEEOIVgSbjchnXbqyg/viewform?usp=header",
         categories: ["Sanat", "Dans", "Hareket"],
         requirements: ["Spor kıyafet önerilir."]
     },
