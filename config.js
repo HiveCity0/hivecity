@@ -256,7 +256,7 @@ const socialEventsConfig = [
         mainDescription: "Edebiyat Kulübü’nün düzenlediği şiir dinletisinde kendi şiirlerinizi okuyabilir, edebiyatseverlerle duygularınızı paylaşabilirsiniz.",
         imageUrl: "https://picsum.photos/seed/edebiyat/400/250",
         registrationDeadline: "2025-10-08",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLScGjT7ff1I3XII-TQTRJ88_bn7Qwp9g92Vbl_kWe82wuEdGHg/viewform?usp=header",
         categories: ["Kültür", "Edebiyat", "Şiir"],
         requirements: ["Şiir okumak isteğe bağlıdır."]
     },
