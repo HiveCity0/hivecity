@@ -178,7 +178,7 @@ const socialEventsConfig = [
         mainDescription: "Sağlık Kulübü olarak düzenlediğimiz bu seminerde sağlıklı yaşamın üç temel taşı olan beslenme, uyku ve stres yönetimi konularında uzman konuşmacılar yer alacak.",
         imageUrl: "https://picsum.photos/seed/saglik/400/250",
         registrationDeadline: "2025-09-20",
-        form: "#",
+        form: "https://docs.google.com/forms/d/e/1FAIpQLSdBMF5zSX8x3LfGgEUerrUm_2-dfMgpKA7Vb9ggypr8WNJUpQ/viewform?usp=header",
         categories: ["Sağlık", "Eğitim", "Kişisel Gelişim"],
         requirements: ["Katılım belgesi verilecektir."]
     },
