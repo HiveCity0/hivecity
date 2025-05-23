@@ -42,7 +42,6 @@ const eventsConfig = [
         description: "Müzik kulübümüzün hazırladığı yıl sonu konseri için tüm öğrencilerimizi bekliyoruz.",
         imageUrl: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
         registrationDeadline: "13 Haziran 2025"
-    },
     {
         id: 2,
         title: "Kariyer Günleri",
@@ -82,7 +81,7 @@ const clubsConfig = [
         name: "Müzik Kulübü",
         description: "Müzik tutkusunu paylaşan öğrencilerin bir araya geldiği, konserler ve etkinlikler düzenlediği kulüp.",
         logoUrl: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        link: "https://docs.google.com/forms/d/e/1FAIpQLScEgP5aaXuY1LeJqEENRUALmIWBYQJf6GQT6LgwlQnaBEDlJA/viewform?usp=header",
+        link: "#",
         mainContent: "Müzik Kulübü, üniversitemizin en aktif kulüplerinden biridir. 2005 yılında kurulan kulübümüz, müzik tutkusuyla bir araya gelen öğrencilerin yeteneklerini sergileyebilecekleri bir platform sunmaktadır. Kulübümüz bünyesinde rock, pop, klasik ve halk müziği gibi farklı türlerde çalışmalar yapılmaktadır.<br><br>Her dönem düzenlediğimiz konserler, kampüs içi ve dışında büyük ilgi görmektedir. Ayrıca müzik teorisi, enstrüman eğitimi ve ses teknolojileri üzerine workshoplar düzenlemekteyiz.<br><br>Kulüp üyeleri arasında amatör ve profesyonel birçok müzisyen bulunmaktadır. Haftada iki gün düzenli olarak prova yapan ekibimize, müziğe ilgi duyan tüm öğrenciler katılabilir."
     },
     {
@@ -150,7 +149,7 @@ const socialEventsConfig = [
         location: "Elektrik-Elektronik Binası Fuaye Alanı",
         description: "IEEE ailesine katıl, projeleri ve yarışmaları öğren.",
         mainDescription: "IEEE Fırat olarak yeni dönem tanışma etkinliğimize seni de bekliyoruz. Geçmiş dönemlerdeki yarışmalar, projeler ve eğitim fırsatları hakkında bilgi vereceğiz.",
-        imageUrl: "https://picsum.photos/seed/ieee/400/250",
+        imageUrl: "https://i.pinimg.com/originals/e9/be/ab/e9beabdaf24f68a4588668c1527fac2b.jpg",
         registrationDeadline: "2025-09-14",
         form: "https://docs.google.com/forms/d/e/1FAIpQLSdBpAm1jI2YnKPcBbVBWHuYCVJu3IXPesLRnH4vK-uTaO8S0g/viewform?usp=header",
         categories: ["Teknoloji", "Topluluk", "Eğitim"],
