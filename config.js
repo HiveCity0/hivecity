@@ -189,7 +189,7 @@ const socialEventsConfig = [
         location: "Üniversite Kampüs Bahçesi",
         description: "Fotoğraf tutkunları için tanışma ve uygulama günü.",
         mainDescription: "Kameranı kap gel! Fotoğrafçılık kulübü olarak dönem başı tanışma ve kısa bir kampüs çekim etkinliği düzenliyoruz.",
-        imageUrl: "https://picsum.photos/seed/fotograf/400/250",
+        imageUrl: "https://i.pinimg.com/736x/c6/73/ff/c673ffa8caecdcdc31207f33fe3354ae.jpg",
         registrationDeadline: "2025-09-16",
         form: "https://docs.google.com/forms/d/e/1FAIpQLSdFknxAZbXvt5TR5sRns0kL90fbZ185df_OgEVmRYKE6dhBng/viewform?usp=header",
         categories: ["Sanat", "Fotoğraf", "Sosyal"],
