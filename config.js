@@ -67,7 +67,7 @@ const eventsConfig = [
         date: "28 Haziran 2025, 13:00-16:00",
         location: "Bilgisayar Mühendisliği Laboratuvarı",
         description: "Yapay zeka temellerini öğrenin ve kendi modelinizi geliştirin.",
-        imageUrl: "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        imageUrl: "https://newsbit.nl/app/uploads/2023/09/AdobeStock_591956858-2048x1148.jpeg",
         registrationDeadline: "25 Haziran 2025"
     }
 ];
