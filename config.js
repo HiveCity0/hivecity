@@ -42,6 +42,7 @@ const eventsConfig = [
         description: "Müzik kulübümüzün hazırladığı yıl sonu konseri için tüm öğrencilerimizi bekliyoruz.",
         imageUrl: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
         registrationDeadline: "13 Haziran 2025"
+    },
     {
         id: 2,
         title: "Kariyer Günleri",
@@ -226,7 +227,7 @@ const socialEventsConfig = [
         date: "2025-09-25",
         location: "Spor Salonu 2",
         description: "Farklı dans türlerinin tanıtıldığı uygulamalı etkinlik.",
-        mainDescription: "Dans etmeyi seviyor musun? Hip-hop, salsa, modern dans gibi çeşitli türlerin tanıtılacağı bu workshop’a bekliyoruz.",
+        mainDescription: "Dans etmeyi seviyor musun? Hip-hop, salsa, modern dans gibi çeşitli türlerin tanıtılacağı bu workshop'a bekliyoruz.",
         imageUrl: "https://picsum.photos/seed/dans/400/250",
         registrationDeadline: "2025-09-23",
         form: "https://docs.google.com/forms/d/e/1FAIpQLSflFy9O8tWHwnlZOMFI3d27aafC3X88WEEOIVgSbjchnXbqyg/viewform?usp=header",
@@ -252,7 +253,7 @@ const socialEventsConfig = [
         date: "2025-10-10",
         location: "Fen-Edebiyat Fakültesi Bahçesi",
         description: "Şiir okumaları ve serbest kürsü akşamı.",
-        mainDescription: "Edebiyat Kulübü’nün düzenlediği şiir dinletisinde kendi şiirlerinizi okuyabilir, edebiyatseverlerle duygularınızı paylaşabilirsiniz.",
+        mainDescription: "Edebiyat Kulübü'nün düzenlediği şiir dinletisinde kendi şiirlerinizi okuyabilir, edebiyatseverlerle duygularınızı paylaşabilirsiniz.",
         imageUrl: "https://picsum.photos/seed/edebiyat/400/250",
         registrationDeadline: "2025-10-08",
         form: "https://docs.google.com/forms/d/e/1FAIpQLScGjT7ff1I3XII-TQTRJ88_bn7Qwp9g92Vbl_kWe82wuEdGHg/viewform?usp=header",
