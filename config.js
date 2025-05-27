@@ -40,7 +40,7 @@ const eventsConfig = [
         date: "15 Haziran 2025, 19:00",
         location: "Ana Kampüs Amfi Tiyatro",
         description: "Müzik kulübümüzün hazırladığı yıl sonu konseri için tüm öğrencilerimizi bekliyoruz.",
-        imageUrl: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        imageUrl: "http://www.kitaptansanattan.com/wp-content/uploads/2019/12/tarkan-konser-2.jpg",
         registrationDeadline: "13 Haziran 2025"
     },
     {
