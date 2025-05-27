@@ -163,7 +163,7 @@ const socialEventsConfig = [
         location: "Fen-Edebiyat Konferans Salonu",
         description: "Yeni dönem kültürel gezileri konuşuyoruz.",
         mainDescription: "Tarih ve Kültür Kulübü olarak bu dönem planladığımız kültürel geziler ve etkinlikleri birlikte konuşacağımız toplantımıza davetlisiniz.",
-        imageUrl: "https://picsum.photos/seed/tarihkulubu/400/250",
+        imageUrl: "https://www.webtekno.com/images/editor/default/0003/64/041bcb4ade6e6008f5cd02fe7d6e51200b8e4435.jpeg",
         registrationDeadline: "2025-09-17",
         form: "https://docs.google.com/forms/d/e/1FAIpQLSdv9GwGHARd1e7JvTxEs4GDm780y5pga51PiaMdB1QfuZiiIg/viewform?usp=header",
         categories: ["Kültür", "Tarih", "Gezi"],
