@@ -215,7 +215,7 @@ const socialEventsConfig = [
         location: "Kültür Merkezi Tiyatro Salonu",
         description: "Sahneye adım atmak isteyenler için seçmeler başlıyor.",
         mainDescription: "Fırat Üniversitesi Tiyatro Topluluğu yeni oyuncularını arıyor! Kendine güveniyorsan, sahnede olmak istiyorsan bu fırsatı kaçırma.",
-        imageUrl: "https://picsum.photos/seed/tiyatro/400/250",
+        imageUrl: "https://stcdn.ibb.istanbul/Uploads/2020/1/Ay-Carmela-1-Gala-(4).jpg",
         registrationDeadline: "2025-09-29",
         form: "https://docs.google.com/forms/d/e/1FAIpQLSf3clAAixi7Y6kUXT5qWnmmGyiNGrUvzNH_AL7RbW_gj_YhtA/viewform?usp=header",
         categories: ["Sanat", "Tiyatro", "Kendini İfade"],
