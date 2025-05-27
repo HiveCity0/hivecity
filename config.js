@@ -49,7 +49,7 @@ const eventsConfig = [
         date: "20-22 Haziran 2025, 10:00-16:00",
         location: "Merkez Konferans Salonu",
         description: "Sektörün önde gelen şirketleriyle tanışma ve networking fırsatı yakalayın.",
-        imageUrl: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        imageUrl: "https://media.licdn.com/dms/image/v2/C4D1BAQGRCL25mnKg7g/company-background_10000/company-background_10000/0/1583338383933?e=2147483647&v=beta&t=IaAO9Un4tJ1d2_5Apyx7mkONsEIiMl70OuqOXD7pjDQ",
         registrationDeadline: "18 Haziran 2025"
     },
     {
