@@ -241,7 +241,7 @@ const socialEventsConfig = [
         location: "Merkez Kütüphane Zemin Kat",
         description: "Yeni dönem başlangıcında mini bir satranç turnuvası.",
         mainDescription: "Fırat Satranç Kulübü yeni döneme turnuva ile başlıyor. Katılımcılar ödüller için yarışacak. Tüm seviyelere açıktır.",
-        imageUrl: "https://picsum.photos/seed/satranc/400/250",
+        imageUrl: "https://cdn.shopify.com/s/files/1/1698/6963/products/s15red_4_1440x.jpg?v=1607536333",
         registrationDeadline: "2025-10-03",
         form: "https://docs.google.com/forms/d/e/1FAIpQLSeRFbJsm_IEwRAtiBYSB7RFs--6RfI3T69QZY8-4OduWUQVxw/viewform?usp=header",
         categories: ["Zeka", "Turnuva", "Eğlence"],
