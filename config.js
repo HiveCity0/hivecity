@@ -202,7 +202,7 @@ const socialEventsConfig = [
         location: "Kültür Merkezi Sahnesi",
         description: "Canlı müzik performansları ve üyelik tanıtımı.",
         mainDescription: "Yeni üyelerle tanışmak ve kulübümüzü tanıtmak amacıyla müzik dolu bir konser düzenliyoruz. Fırat Üniversitesi Müzik Topluluğu sahnede!",
-        imageUrl: "https://picsum.photos/seed/muzik/400/250",
+        imageUrl: "https://cdn1.ntv.com.tr/gorsel/kK6jWh7xmEKT8qhhrkDgog.jpg?width=1080&mode=crop&scale=both",
         registrationDeadline: "2025-09-26",
         form: "https://docs.google.com/forms/d/e/1FAIpQLScPuKq1Rn3IFu6e2HWy8fHNWy-mOSY1oIsVGybGTw4o8Btd1g/viewform?usp=header",
         categories: ["Sanat", "Müzik", "Sosyal"],
