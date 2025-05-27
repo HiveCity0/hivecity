@@ -254,7 +254,7 @@ const socialEventsConfig = [
         location: "Fen-Edebiyat Fakültesi Bahçesi",
         description: "Şiir okumaları ve serbest kürsü akşamı.",
         mainDescription: "Edebiyat Kulübü'nün düzenlediği şiir dinletisinde kendi şiirlerinizi okuyabilir, edebiyatseverlerle duygularınızı paylaşabilirsiniz.",
-        imageUrl: "https://picsum.photos/seed/edebiyat/400/250",
+        imageUrl: "https://avatars.mds.yandex.net/i?id=bb5400d8a083687380d2f55e55604b32_l-5492246-images-thumbs&ref=rim&n=13&w=640&h=640",
         registrationDeadline: "2025-10-08",
         form: "https://docs.google.com/forms/d/e/1FAIpQLScGjT7ff1I3XII-TQTRJ88_bn7Qwp9g92Vbl_kWe82wuEdGHg/viewform?usp=header",
         categories: ["Kültür", "Edebiyat", "Şiir"],
