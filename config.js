@@ -228,7 +228,7 @@ const socialEventsConfig = [
         location: "Spor Salonu 2",
         description: "Farklı dans türlerinin tanıtıldığı uygulamalı etkinlik.",
         mainDescription: "Dans etmeyi seviyor musun? Hip-hop, salsa, modern dans gibi çeşitli türlerin tanıtılacağı bu workshop'a bekliyoruz.",
-        imageUrl: "https://images.squarespace-cdn.com/content/v1/55b24ca1e4b0f48e249ad4fa/1453136255967-C45G7IA944D64UWGPSWY/Lindyhop+in+Paris.jpg?format=2500w",
+        imageUrl: "https://i.ytimg.com/vi/GEfWa9YWcHY/maxresdefault.jpg",
         registrationDeadline: "2025-09-23",
         form: "https://docs.google.com/forms/d/e/1FAIpQLSflFy9O8tWHwnlZOMFI3d27aafC3X88WEEOIVgSbjchnXbqyg/viewform?usp=header",
         categories: ["Sanat", "Dans", "Hareket"],
